@@ -1,0 +1,50 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 80%;
+  grid-template-areas: "view-a"
+                      "view-i";
+
+  height: 100%;
+  background: #eee;
+  padding: 5px;
+}
+
+.view-a {
+  grid-area: view-a;
+}
+
+.view-i {
+  grid-area: view-i;
+}
+
+
+.view {
+  background-color: #ffffff;
+}
+
+.App .ant-card {
+  margin: 2px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.App .ant-card-head {
+  min-height: 24px;
+  border-top: 2px solid #409eff;
+  padding: 0 6px;
+}
+
+.App .ant-card-head .ant-card-head-wrapper .ant-card-head-title {
+  padding: 4px 0;
+}
+
+.App .ant-card-head .ant-card-head-wrapper .ant-card-extra {
+  padding: 4px 0;
+}
+
+.App .ant-card-body {
+  height: calc(100% - 35px);
+  padding: 4px;
+}
