@@ -59,7 +59,7 @@ class chart {
     //dataset
     dataset = 1
 
-        //dataset1
+        // dataset1
             nodes = ['801010','801020','801030','801040','801050','801080','801110','801120','801130','801140','801150','801160',
         '801170','801180','801200','801210','801230','801710','801720','801730','801740','801750','801760','801770','801780','801790'
         ,'801880','801890'];
@@ -1629,10 +1629,10 @@ drawColorLegend4Diff(container, width, height, start_point, axis_label) {
   }
 
   drawColorLegendOuter() { 
-    this.drawColorLegend4Diff("#scale-diff", 90, 15, [25, 15], [-1, 0, 1]);
+    this.drawColorLegend4Diff("#scale-diff", 90, 15, [0, 15], [-1, 0, 1]);
     this.drawColorLegend4Org("#scale-org", 90, 15, [5, 0], [0, 1]);
   }
-
+    // 宽，高，【，y】
 };
 
 export default new chart();

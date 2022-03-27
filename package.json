@@ -1,6 +1,7 @@
 {
   "name": "front",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.6.4",
@@ -79,7 +80,7 @@
   },
   "scripts": {
     "start": "node --max_old_space_size=6000 scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node --max_old_space_size=6000 scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {

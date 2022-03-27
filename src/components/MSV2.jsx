@@ -13,7 +13,7 @@ class View extends React.PureComponent {
     this.state = {
       resetcheck:'default',
       msvSwitch:true,
-      kelpSwitch:true,
+      kelpSwitch:false,
       streamSwitch:false,
       unfoldSwitch:true,
       msvnodeSwitch:true,
@@ -103,7 +103,7 @@ class View extends React.PureComponent {
 
   render() {
     return (
-      <Card className="view view-i" title="Main View" extra={
+      <Card className="view view-i" title="Nested Matrix Design" extra={
 
         <div>   
                 <div style={{float:"left"}}> &ensp; Max: &ensp; </div>
@@ -143,7 +143,7 @@ class View extends React.PureComponent {
                 </Tooltip> 
                 &ensp; MaskSwitch: &ensp; 
                 <Tooltip title="Display Difference Mask or not">
-                  <Switch checkedChildren="on" unCheckedChildren="off" defaultChecked onChange={(checked)=>this.KelpSwitch(checked)}/>
+                  <Switch checkedChildren="on" unCheckedChildren="off" onChange={(checked)=>this.KelpSwitch(checked)}/>
                 </Tooltip>   
 
                 &ensp; MaskFocus: &ensp; 
@@ -160,7 +160,7 @@ class View extends React.PureComponent {
       }>
         {/* <div className="view-container" ref={ ref => this.container = ref }></div> */}
 <div className="view-container" ref={ref => this.container = ref} style={{ position:"relative" }}>
-          <div style={{ width: '4.8%', display: 'flex', flexDirection: 'Column', justifyContent: 'flex-start', alignItems: 'center', position: "absolute", left: "5px", top: "12px" }}>
+          <div style={{ width: '4%', display: 'flex', flexDirection: 'Column', justifyContent: 'flex-start', alignItems: 'center', position: "absolute", left: "10px", top: "12px" }}>
             <svg id="scale-diff" />
             <svg id="scale-org" style={{ margin: "5 0" }}/>
           </div>
